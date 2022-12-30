@@ -1,128 +1,88 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/site.css" />
-    <style>
-        .tree { border: 1px solid #ddd; width: 300px; height: 200px; overflow: auto; }
-        .tree, .tree ul { margin-left: 0px; padding-left: 12px; }
-        .tree li { list-style-type: none; }
-        .tree label { cursor: pointer;  }
-        .tree label > input[type="checkbox"] { display: none; }
-        .tree label:has(~ul):not(:has(input[type=checkbox]:checked))::before {
-            content: '+';
-            width: 12px;
-            height: 12px;
-            text-align: center;
-            display: inline-block;
-            border: 1px solid black;
-            border-radius: 3px;
-            font-size: 10pt;
-            margin-right: 5px;
-            vertical-align: baseline;
-            box-shadow: 2px 2px 1px #ccc;
-        }
-        .tree label:has(~ul):has(input[type=checkbox]:checked)::before {
-            content: '-';
-            width: 12px;
-            height: 12px;
-            text-align: center;
-            display: inline-block;
-            border: 1px solid black;
-            border-radius: 3px;
-            font-size: 10pt;
-            margin-right: 5px;
-            vertical-align: baseline;
-            box-shadow: 2px 2px 1px #ccc;
-        }
-        .tree label:not(:has(~ul))::before {
-            content: '';
-            width: 12px;
-            height: 12px;
-            text-align: center;
-            display: inline-block;            
-            border: 1px solid transparent;
-            border-radius: 3px;
-            font-size: 10pt;
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-        .tree label ~ ul { 
-            max-height: 0px;
-            overflow: hidden;
-            transition: max-height 0.25s ease-out;            
-        }
-        .tree label:has(input[type=checkbox]:checked) ~ ul {             
-            transition: max-height 0.25s ease-in;            
-            max-height: 500px;
-        }
-        .tree a:link { background-color: transparent; color: steelblue; text-decoration: none; }
-        .tree a:hover { background-color: #aaa; color: white; }
-    </style>
 </head>
-
 <body>
-<div class="site-container">
-    <aside class="sidebar">
-    </aside>
-    <main class="site-main">
-        <h1>Tree</h1>
-        <ul class="tree">            
-            <li>
-                <label><input type="checkbox" />A</label>
-                <ul>
+    <nav class="top-nav">
+        <input type="checkbox" class="nav-pin" />
+        <ul>
+            <li><a href="javascript: void(0)">Home</a></li>
+            <li><a href="javascript: void(0)">Products</a></li>
+            <li><a href="javascript: void(0)">News</a></li>
+            <li><a href="javascript: void(0)">Blog</a></li>
+            <li><a href="javascript: void(0)">About</a></li>
+        </ul>
+    </nav>
+    <div class="site-container">
+        <aside class="sidebar">
+        </aside>
+        <main class="site-main">
+            <div class="card">
+                <h1>Tree</h1>
+                <ul class="tree">            
                     <li>
-                        <label><input type="checkbox" /></label><a href="javascript:void(0)">A-1</a>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" />A-2</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" />A-3</label>
-                    </li>   
-                </ul>
-            </li>
-            <li>
-                <label><input type="checkbox" />B</label>
-                <ul>
-                    <li>
-                        <label><input type="checkbox" />B-1</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" /></label><a href="javascript:void(0)">B-2</a>
+                        <label><input type="checkbox" />A</label>
                         <ul>
                             <li>
-                                <label><input type="checkbox" />B-2-A</label>
+                                <label><input type="checkbox" /></label><a href="javascript:void(0)">A-1</a>
                             </li>
                             <li>
-                                <label><input type="checkbox" />B-2-B</label>
+                                <label><input type="checkbox" />A-2</label>
                             </li>
                             <li>
-                                <label><input type="checkbox" />B-2-C</label>
-                            </li>
+                                <label><input type="checkbox" />A-3</label>
+                            </li>   
                         </ul>
                     </li>
                     <li>
-                        <label><input type="checkbox" />B-3</label>
-                    </li>   
-                </ul>
-            </li>
-            <li>
-                <label><input type="checkbox" />C</label>
-                <ul>
-                    <li>
-                        <label><input type="checkbox" />C-1</label>
+                        <label><input type="checkbox" />B</label>
+                        <ul>
+                            <li>
+                                <label><input type="checkbox" />B-1</label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" /></label><a href="javascript:void(0)">B-2</a>
+                                <ul>
+                                    <li>
+                                        <label><input type="checkbox" />B-2-A</label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox" />B-2-B</label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox" />B-2-C</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" />B-3</label>
+                            </li>   
+                        </ul>
                     </li>
                     <li>
-                        <label><input type="checkbox" />C-2</label>
+                        <label><input type="checkbox" />C</label>
+                        <ul>
+                            <li>
+                                <label><input type="checkbox" />C-1</label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" />C-2</label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" />C-3</label>
+                            </li>   
+                        </ul>
                     </li>
-                    <li>
-                        <label><input type="checkbox" />C-3</label>
-                    </li>   
                 </ul>
-            </li>
-        </ul>
-    </main>
-    <aside class="sidebar">
-    </aside>
-</div>
+            </div>
+        </main>
+        <aside class="sidebar">
+        </aside>
+    </div>
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
+    <div id="cloud3" class="cloud"></div>
+    <div id="cloud4" class="cloud"></div>
+    <div class="sun"></div>
 </body>
 </html>

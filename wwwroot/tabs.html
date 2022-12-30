@@ -1,92 +1,51 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/site.css" />
-    <style>
-        /* Tab Set */
-        .tabset-body {
-            border: 1px solid black;
-            border-top-right-radius: 3px;
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding: 10px;
-            margin: 0px;
-        }
-        .tab {
-            cursor: pointer;
-            border-top: 1px solid black;
-            border-left: 1px solid black;
-            border-right: 1px solid black;
-            border-bottom: 1px solid transparent;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 3px;            
-            padding-bottom: 1px;
-            background-color: #fff;
-        }
-        .tab:has(input[type=radio]:checked) {
-            filter: brightness(100%);            
-            border-bottom: 1px solid transparent;
-        }
-        .tab:has(input[type=radio]:not(:checked)) {
-            filter: brightness(80%);
-            border-bottom: 1px solid black;
-            transition: all 0.25s ease-in;
-        }
-
-        .tab input[type=radio] { 
-            display: none; 
-        }
-        .tab-content { 
-            position: absolute;
-            height: 500px;
-            opacity: 0;
-        }
-        .tabset > .tabset-tabs:has(.tab-1 > input:checked) + .tabset-body > .tab-content-1,
-        .tabset > .tabset-tabs:has(.tab-2 > input:checked) + .tabset-body > .tab-content-2,
-        .tabset > .tabset-tabs:has(.tab-3 > input:checked) + .tabset-body > .tab-content-3,
-        .tabset > .tabset-tabs:has(.tab-4 > input:checked) + .tabset-body > .tab-content-4,
-        .tabset > .tabset-tabs:has(.tab-5 > input:checked) + .tabset-body > .tab-content-5,
-        .tabset > .tabset-tabs:has(.tab-6 > input:checked) + .tabset-body > .tab-content-6,
-        .tabset > .tabset-tabs:has(.tab-7 > input:checked) + .tabset-body > .tab-content-7,
-        .tabset > .tabset-tabs:has(.tab-8 > input:checked) + .tabset-body > .tab-content-8,
-        .tabset > .tabset-tabs:has(.tab-9 > input:checked) + .tabset-body > .tab-content-9,
-        .tabset > .tabset-tabs:has(.tab-0 > input:checked) + .tabset-body > .tab-content-0 { 
-            transition: opacity 0.25s ease-in;
-            position: static;
-            opacity: 1;
-        }
-    </style>
 </head>
-
 <body>
-<div class="site-container">
-    <aside class="sidebar">
-    </aside>
-    <main class="site-main">
-        <h1>Tabs</h1>
-        <div class="tabset">
-            <div class="tabset-tabs">
-                <label class="tab tab-1"><input type="radio" name="tabs1" checked="checked"/> Tab 1</label>
-                <label class="tab tab-2"><input type="radio" name="tabs1" /> Tab 2</label>
-                <label class="tab tab-3"><input type="radio" name="tabs1" /> Tab 3</label>
+    <nav class="top-nav">
+        <input type="checkbox" class="nav-pin" />
+        <ul>
+            <li><a href="javascript: void(0)">Home</a></li>
+            <li><a href="javascript: void(0)">Products</a></li>
+            <li><a href="javascript: void(0)">News</a></li>
+            <li><a href="javascript: void(0)">Blog</a></li>
+            <li><a href="javascript: void(0)">About</a></li>
+        </ul>
+    </nav>
+    <div class="site-container">
+        <aside class="sidebar">
+        </aside>
+        <main class="site-main">
+            <div class="card">
+                <h1>Tabs</h1>
+                <div class="tabset">
+                    <div class="tabset-tabs">
+                        <label class="tab tab-1"><input type="radio" name="tabs1" checked="checked"/> Tab 1</label>
+                        <label class="tab tab-2"><input type="radio" name="tabs1" /> Tab 2</label>
+                        <label class="tab tab-3"><input type="radio" name="tabs1" /> Tab 3</label>
+                    </div>
+                    <div class="tabset-body">
+                        <section class="tab-content tab-content-1">
+                            Tab Body 1
+                        </section>
+                        <section class="tab-content tab-content-2">
+                            Tab Body 2
+                        </section>
+                        <section class="tab-content tab-content-3">
+                            Tab Body 3
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div class="tabset-body">
-                <section class="tab-content tab-content-1">
-                    Tab Body 1
-                </section>
-                <section class="tab-content tab-content-2">
-                    Tab Body 2
-                </section>
-                <section class="tab-content tab-content-3">
-                    Tab Body 3
-                </section>
-            </div>
-        </div>
-    </main>
-    <aside class="sidebar">
-    </aside>
-</div>
+        </main>
+        <aside class="sidebar">
+        </aside>
+    </div>
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
+    <div id="cloud3" class="cloud"></div>
+    <div id="cloud4" class="cloud"></div>
+    <div class="sun"></div>
 </body>
 </html>

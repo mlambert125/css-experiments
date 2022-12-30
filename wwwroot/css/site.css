@@ -7,16 +7,354 @@
 }
 
 /* Global tag styles */
-html { height: 100%; margin: 0px; padding: 0px; }
-body { font-family: Helvetica, arial, sans-serif; margin: 0px; height: calc(100%) }
-h1 { color: var(--headingBase); filter: brightness(100%); }
-h2 { color: var(--headingBase); filter: brightness(90%); }
-h3 { color: var(--headingBase); filter: brightness(80%); }
-h4 { color: var(--headingBase); filter: brightness(70%); }
-h5 { color: var(--headingBase); filter: brightness(60%); }
-h6 { color: var(--headingBase); filter: brightness(50%); }
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Helvetica, arial, sans-serif;
+    margin: 0px;
+    height: calc(100%)
+}
+
+h1 {
+    color: var(--headingBase);
+    filter: brightness(100%);
+}
+
+h2 {
+    color: var(--headingBase);
+    filter: brightness(90%);
+}
+
+h3 {
+    color: var(--headingBase);
+    filter: brightness(80%);
+}
+
+h4 {
+    color: var(--headingBase);
+    filter: brightness(70%);
+}
+
+h5 {
+    color: var(--headingBase);
+    filter: brightness(60%);
+}
+
+h6 {
+    color: var(--headingBase);
+    filter: brightness(50%);
+}
 
 /* Site Layout */
-.site-container { display: flex; padding: 30px; }
-.site-main { flex-grow: 4; }
-.sidebar { flex-grow: 1; padding-left: 10px; padding-right: 10px; min-width: 15%; }
+.site-container {
+    display: flex;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgb(170, 180, 200), rgb(220, 230, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.site-main {
+    flex-grow: 4;
+    z-index: 5;
+}
+
+.sidebar {
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 15%;
+    z-index: 5;
+}
+
+.sun {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    background-image: radial-gradient(rgba(255, 220, 0, 1), rgba(255, 255, 0, 0));
+    top: -250px;
+    left: calc(100% - 250px);
+    border-radius: 250px;
+    z-index: 1;
+}
+
+.cloud {
+    position: fixed;
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    z-index: 2;
+}
+
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -110px;
+    left: -110px;
+}
+
+.cloud::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+}
+
+#cloud1 {
+    top: 25%;
+    animation: cloud1_anim 60s linear -20s infinite backwards;
+}
+
+#cloud2 {
+    top: 80%;
+    animation: cloud2_anim 70s linear -50s infinite backwards;
+}
+
+#cloud3 {
+    top: 60%;
+    animation: cloud3_anim 60s linear -10s infinite backwards;
+}
+
+#cloud4 {
+    top: 40%;
+    animation: cloud4_anim 50s linear -40s infinite backwards;
+}
+
+@keyframes cloud1_anim {
+    0% {
+        transform: translateX(-350px);
+    }
+
+    100% {
+        transform: translateX(600%);
+    }
+}
+
+@keyframes cloud2_anim {
+    0% {
+        transform: translateX(-350px);
+    }
+
+    100% {
+        transform: translateX(600%);
+    }
+}
+
+@keyframes cloud3_anim {
+    0% {
+        transform: translateX(-350px);
+    }
+
+    100% {
+        transform: translateX(600%);
+    }
+}
+
+@keyframes cloud4_anim {
+    0% {
+        transform: translateX(-350px);
+    }
+
+    100% {
+        transform: translateX(600%);
+    }
+}
+
+/* Tab Set */
+.tabset-body {
+    border: 1px solid black;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.tab {
+    cursor: pointer;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    background-color: #fff;
+}
+
+.tab:has(input[type=radio]:checked) {
+    filter: brightness(100%);
+    border-bottom: 1px solid transparent;
+}
+
+.tab:has(input[type=radio]:not(:checked)) {
+    filter: brightness(80%);
+    border-bottom: 1px solid black;
+    transition: all 0.25s ease-in;
+}
+
+.tab input[type=radio] {
+    display: none;
+}
+
+.tab-content {
+    position: absolute;
+    height: 500px;
+    opacity: 0;
+}
+
+.tabset>.tabset-tabs:has(.tab-1 > input:checked)+.tabset-body>.tab-content-1,
+.tabset>.tabset-tabs:has(.tab-2 > input:checked)+.tabset-body>.tab-content-2,
+.tabset>.tabset-tabs:has(.tab-3 > input:checked)+.tabset-body>.tab-content-3,
+.tabset>.tabset-tabs:has(.tab-4 > input:checked)+.tabset-body>.tab-content-4,
+.tabset>.tabset-tabs:has(.tab-5 > input:checked)+.tabset-body>.tab-content-5,
+.tabset>.tabset-tabs:has(.tab-6 > input:checked)+.tabset-body>.tab-content-6,
+.tabset>.tabset-tabs:has(.tab-7 > input:checked)+.tabset-body>.tab-content-7,
+.tabset>.tabset-tabs:has(.tab-8 > input:checked)+.tabset-body>.tab-content-8,
+.tabset>.tabset-tabs:has(.tab-9 > input:checked)+.tabset-body>.tab-content-9,
+.tabset>.tabset-tabs:has(.tab-0 > input:checked)+.tabset-body>.tab-content-0 {
+    transition: opacity 0.25s ease-in;
+    position: static;
+    opacity: 1;
+}
+
+/* Accordion */
+.accordion {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.accordion-heading>input[type=radio] {
+    display: none;
+}
+
+.accordion-heading {
+    background-color: lightsteelblue;
+    border-top: 1px solid black;
+    display: block;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.accordion-body {
+    border-top: 0px solid transparent;
+    transition: max-height 0.5s ease-out;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.accordion-item:has(.accordion-heading > input[type=radio]:checked)>.accordion-body {
+    transition: max-height 0.5s ease-in;
+    border-top: 1px solid black;
+    padding: 10px;
+    max-height: 100px;
+}
+
+/* Tree */
+.tree {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+.tree,
+.tree ul {
+    margin-left: 0px;
+    padding-left: 12px;
+}
+
+.tree li {
+    list-style-type: none;
+}
+
+.tree label {
+    cursor: pointer;
+}
+
+.tree label>input[type="checkbox"] {
+    display: none;
+}
+
+.tree label:has(~ul):not(:has(input[type=checkbox]:checked))::before {
+    content: '+';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 10pt;
+    margin-right: 5px;
+    vertical-align: baseline;
+    box-shadow: 2px 2px 1px #ccc;
+}
+
+.tree label:has(~ul):has(input[type=checkbox]:checked)::before {
+    content: '-';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 10pt;
+    margin-right: 5px;
+    vertical-align: baseline;
+    box-shadow: 2px 2px 1px #ccc;
+}
+
+.tree label:not(:has(~ul))::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 10pt;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.tree label~ul {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+}
+
+.tree label:has(input[type=checkbox]:checked)~ul {
+    transition: max-height 0.25s ease-in;
+    max-height: 500px;
+}
+
+.tree a:link {
+    background-color: transparent;
+    color: steelblue;
+    text-decoration: none;
+}
+
+.tree a:hover {
+    background-color: #aaa;
+    color: white;
+}
