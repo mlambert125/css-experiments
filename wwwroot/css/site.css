@@ -53,6 +53,7 @@ h6 {
 .site-container {
     display: flex;
     padding: 30px;
+    min-height: 100vh;
     background: linear-gradient(to bottom, rgb(170, 180, 200), rgb(220, 230, 255));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -270,7 +271,7 @@ h6 {
 
 .tab-content {
     position: absolute;
-    height: 500px;
+    min-height: 200px;
     opacity: 0;
 }
 
