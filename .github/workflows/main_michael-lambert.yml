@@ -8,16 +8,8 @@ variables:
   ARTIFACT_NAME: DevelopMomentumWeb
 
 stages:
-  - stage: Build
-    displayName: Build
-
-    jobs:
-      - job: Transform
-        displayName: Transform Input
-
   - stage: Release
     displayName: Release
-    dependsOn: Build
 
     jobs:
       - deployment: DeployToStorage
