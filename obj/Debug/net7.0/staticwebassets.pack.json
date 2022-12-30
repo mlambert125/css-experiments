@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\accordion.html",
+      "PackagePath": "staticwebassets\\accordion.html"
+    },
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\general.css",
+      "PackagePath": "staticwebassets\\general.css"
+    },
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\tabs.html",
+      "PackagePath": "staticwebassets\\tabs.html"
+    },
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\top-nav.html",
+      "PackagePath": "staticwebassets\\top-nav.html"
+    },
+    {
+      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\tree.html",
+      "PackagePath": "staticwebassets\\tree.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.css-experiments.props",
+      "PackagePath": "build\\css-experiments.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.css-experiments.props",
+      "PackagePath": "buildMultiTargeting\\css-experiments.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.css-experiments.props",
+      "PackagePath": "buildTransitive\\css-experiments.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.css-experiments.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
