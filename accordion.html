@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link rel="stylesheet" href="general.css" />
+    <style>
+        /* Accordion */
+        .accordion { 
+            border-left: 1px solid black; 
+            border-right: 1px solid black; 
+            border-bottom: 1px solid black;
+        }                     
+        .accordion-heading > input[type=radio] { 
+            display: none; 
+        }
+        .accordion-heading { 
+            background-color: lightsteelblue; 
+            border-top: 1px solid black; 
+            display: block; 
+            padding: 3px; 
+            cursor: pointer;
+        }  
+        .accordion-body {             
+            border-top: 0px solid transparent; 
+            transition: max-height 0.5s ease-out;            
+            max-height: 0px;
+            overflow: hidden;
+        }        
+        .accordion-item:has(.accordion-heading > input[type=radio]:checked) > .accordion-body { 
+            transition: max-height 0.5s ease-in;
+            border-top: 1px solid black; 
+            padding: 10px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="site-container">
+    <aside class="sidebar">        
+    </aside>
+    <main class="site-main">
+        <h1>Accordion</h1>
+        <div class="accordion">
+            <section class="accordion-item">
+                <label class="accordion-heading">
+                    <input type="radio" name="accordion1" />
+                    Heading #1
+                </label>
+                <div class="accordion-body">
+                    <ul>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <label class="accordion-heading">
+                    <input type="radio" name="accordion1" />
+                    Heading #2
+                </label>
+                <div class="accordion-body">
+                    <ul>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <label class="accordion-heading">
+                    <input type="radio" name="accordion1" />
+                    Heading #3
+                </label>
+                <div class="accordion-body">
+                    <ul>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <aside class="sidebar">
+    </aside>
+</div>
+</body>
+</html>

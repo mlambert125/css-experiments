@@ -1,0 +1,297 @@
+<html>
+<head>
+    <link rel="stylesheet" href="general.css" />
+    <style>
+        .site-container {
+            background: linear-gradient(to bottom, rgb(170, 180, 200), rgb(220, 230, 255) );
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+        .site-main {
+            z-index: 5;
+        }
+        .card {
+            background-image: linear-gradient(to bottom, rgba(240, 240, 240, .60), rgba(240, 240, 240, .85));
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            box-shadow: 6px 6px 3px #ccc;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .top-nav {
+            position: fixed;
+            background-image: linear-gradient(to bottom, rgba(240, 240, 240, .50), rgba(240, 240, 240, .70));
+            backdrop-filter: blur(5px);
+            z-index: 9;
+            top: 0;
+            display: flex;
+            width: 50%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;            
+            transform: translateY(-2.25em) translateX(50%);
+            transition: all 0.5s ease-in-out;            
+            box-shadow: 6px 6px 3px #ccc;
+        }
+
+        .top-nav input[type=checkbox].nav-pin {
+            margin-left: 20px;
+        }
+
+        .top-nav:has(input[type=checkbox].nav-pin:checked) {
+            transform: translateY(0) translateX(50%);            
+        }
+
+        .top-nav:hover {
+            transform: translateY(0) translateX(50%);            
+        }
+        .top-nav > ul {
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .top-nav > ul > li {
+            width: 100px;
+        }
+        .top-nav > ul > li > a {
+            text-decoration: none;
+            color: steelblue;
+        }
+
+        .sun {
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            background-image: radial-gradient(rgba(255, 220, 0, 1), rgba(255, 255, 0, 0));
+            top: -250px;
+            left: calc(100% - 250px);
+            border-radius: 250px;
+            z-index: 1;
+        }
+
+        .cloud {         
+            position: fixed;            
+            width:350px;
+            height:120px;
+            background:#ECEFF1;
+            box-shadow: 10px 10px rgba(0,0,0,0.2);
+            border-radius:100px;
+            z-index: 2;
+        }
+        .cloud::after, .cloud::before {
+            content:"";
+            position:relative;
+            display:inline-block;
+            background:inherit;
+            border-radius:inherit;
+        }
+        .cloud::after {
+            width:100px;
+            height:100px;
+            top:-110px;
+            left:-110px;
+        }
+        
+        .cloud::before {
+            width:180px;
+            height:180px;
+            top: -70px;
+            left:130px;
+        }
+        
+        #cloud1 {
+            top: 25%;          
+            animation: cloud1_anim 60s linear -20s infinite backwards;
+        }
+        #cloud2 {
+            top: 80%;             
+            animation: cloud2_anim 70s linear -50s infinite backwards;
+        }
+        #cloud3 {
+            top: 60%; 
+            animation: cloud3_anim 60s linear -10s infinite backwards;
+        }
+        #cloud4 {
+            top: 40%; 
+            animation: cloud4_anim 50s linear -40s infinite backwards;
+        }
+
+        @keyframes cloud1_anim {
+            0% {
+                transform: translateX(-350px);
+            }
+            100% {
+                transform: translateX(600%);
+            }
+        }
+
+        @keyframes cloud2_anim {
+            0% {
+                transform: translateX(-350px);
+            }
+            100% {
+                transform: translateX(600%);
+            }
+        }
+
+        @keyframes cloud3_anim {
+            0% {
+                transform: translateX(-350px);
+            }
+            100% {
+                transform: translateX(600%);
+            }
+        }
+
+        @keyframes cloud4_anim {
+            0% {
+                transform: translateX(-350px);
+            }
+            100% {
+                transform: translateX(600%);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <input type="checkbox" class="nav-pin" />
+        <ul>
+            <li><a href="javascript: void(0)">Home</a></li>
+            <li><a href="javascript: void(0)">Products</a></li>
+            <li><a href="javascript: void(0)">News</a></li>
+            <li><a href="javascript: void(0)">Blog</a></li>
+            <li><a href="javascript: void(0)">About</a></li>
+        </ul>
+    </nav>
+<div class="site-container">
+    <aside class="sidebar">
+    </aside>
+    <main class="site-main">
+        <h1>Navigation</h1>        
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Odio aenean sed adipiscing diam donec adipiscing. Urna duis convallis convallis tellus id interdum velit laoreet. Augue ut 
+            lectus arcu bibendum at varius vel pharetra. In pellentesque massa placerat duis ultricies lacus sed turpis. Mattis molestie 
+            a iaculis at erat pellentesque adipiscing. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Enim sit amet 
+            venenatis urna cursus eget nunc scelerisque viverra. Ipsum nunc aliquet bibendum enim facilisis gravida. Est pellentesque 
+            elit ullamcorper dignissim cras tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Cras 
+            fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Donec ultrices tincidunt arcu non sodales neque sodales ut. 
+            Sem integer vitae justo eget. Id diam maecenas ultricies mi eget mauris. Posuere lorem ipsum dolor sit amet. Sit amet dictum 
+            sit amet justo donec enim diam.
+        </div>
+    </main>
+    <aside class="sidebar">
+    </aside>
+</div>
+<div id="cloud1" class="cloud"></div>
+<div id="cloud2" class="cloud"></div>
+<div id="cloud3" class="cloud"></div>
+<div id="cloud4" class="cloud"></div>
+<div class="sun"></div>
+</body>
+</html>

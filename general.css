@@ -1,0 +1,22 @@
+/* Variables */
+:root {
+    --tabBackground: steelblue;
+    --tabForeground: white;
+    --defaultBorder: 1px solid lightsteelblue;
+    --headingBase: steelblue;
+}
+
+/* Global tag styles */
+html { height: 100%; margin: 0px; padding: 0px; }
+body { font-family: Helvetica, arial, sans-serif; margin: 0px; height: calc(100%) }
+h1 { color: var(--headingBase); filter: brightness(100%); }
+h2 { color: var(--headingBase); filter: brightness(90%); }
+h3 { color: var(--headingBase); filter: brightness(80%); }
+h4 { color: var(--headingBase); filter: brightness(70%); }
+h5 { color: var(--headingBase); filter: brightness(60%); }
+h6 { color: var(--headingBase); filter: brightness(50%); }
+
+/* Site Layout */
+.site-container { display: flex; padding: 30px; }
+.site-main { flex-grow: 4; }
+.sidebar { flex-grow: 1; padding-left: 10px; padding-right: 10px; min-width: 15%; }
