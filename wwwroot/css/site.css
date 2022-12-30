@@ -176,6 +176,58 @@ h6 {
     }
 }
 
+/* Card */
+.card {
+    background-image: linear-gradient(to bottom, rgba(240, 240, 240, .60), rgba(240, 240, 240, .85));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 6px 6px 3px #ccc;
+    padding: 30px;
+    margin: 10px;
+}
+
+/* Top Navigation */
+.top-nav {
+    position: fixed;
+    background-image: linear-gradient(to bottom, rgba(240, 240, 240, .50), rgba(240, 240, 240, .70));
+    backdrop-filter: blur(5px);
+    z-index: 9;
+    top: 0;
+    display: flex;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;            
+    transform: translateY(-2.25em) translateX(50%);
+    transition: all 0.5s ease-in-out;            
+    box-shadow: 6px 6px 3px #ccc;
+}
+
+.top-nav input[type=checkbox].nav-pin {
+    margin-left: 20px;
+}
+
+.top-nav:has(input[type=checkbox].nav-pin:checked) {
+    transform: translateY(0) translateX(50%);            
+}
+
+.top-nav:hover {
+    transform: translateY(0) translateX(50%);            
+}
+.top-nav > ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.top-nav > ul > li {
+    width: 100px;
+}
+.top-nav > ul > li > a {
+    text-decoration: none;
+    color: steelblue;
+}
+
 /* Tab Set */
 .tabset-body {
     border: 1px solid black;
