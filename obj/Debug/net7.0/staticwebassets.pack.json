@@ -1,27 +1,39 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\accordion.html",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\accordion.html",
       "PackagePath": "staticwebassets\\accordion.html"
     },
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\index.html",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\hedge.jpg",
+      "PackagePath": "staticwebassets\\hedge.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\tabs.html",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\logo.html",
+      "PackagePath": "staticwebassets\\logo.html"
+    },
+    {
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\plants.jpg",
+      "PackagePath": "staticwebassets\\plants.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\tabs.html",
       "PackagePath": "staticwebassets\\tabs.html"
     },
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\top-nav.html",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\top-nav.html",
       "PackagePath": "staticwebassets\\top-nav.html"
     },
     {
-      "Id": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\wwwroot\\tree.html",
+      "Id": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\tree.html",
       "PackagePath": "staticwebassets\\tree.html"
     },
     {

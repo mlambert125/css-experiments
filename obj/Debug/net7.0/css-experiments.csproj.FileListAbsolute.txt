@@ -25,3 +25,30 @@ C:\Users\mikel\OneDrive - Dolbey Systems, Inc\Desktop\css-experiments\obj\Debug\
 C:\Users\mikel\OneDrive - Dolbey Systems, Inc\Desktop\css-experiments\obj\Debug\net7.0\css-experiments.pdb
 C:\Users\mikel\OneDrive - Dolbey Systems, Inc\Desktop\css-experiments\obj\Debug\net7.0\css-experiments.genruntimeconfig.cache
 C:\Users\mikel\OneDrive - Dolbey Systems, Inc\Desktop\css-experiments\obj\Debug\net7.0\ref\css-experiments.dll
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\appsettings.json
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.staticwebassets.runtime.json
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.exe
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.deps.json
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.runtimeconfig.json
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.dll
+C:\Users\mlamb\projects\personal\css-experiments\bin\Debug\net7.0\css-experiments.pdb
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.csproj.AssemblyReference.cache
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.AssemblyInfoInputs.cache
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.AssemblyInfo.cs
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.csproj.CoreCompileInputs.cache
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets\msbuild.css-experiments.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets\msbuild.build.css-experiments.props
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.css-experiments.props
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.css-experiments.props
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\scopedcss\bundle\css-experiments.styles.css
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.dll
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\refint\css-experiments.dll
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.pdb
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\css-experiments.genruntimeconfig.cache
+C:\Users\mlamb\projects\personal\css-experiments\obj\Debug\net7.0\ref\css-experiments.dll

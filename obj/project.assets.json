@@ -8,32 +8,37 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mikel\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mlamb\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\css-experiments.csproj",
+      "projectUniqueName": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\css-experiments.csproj",
       "projectName": "css-experiments",
-      "projectPath": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\css-experiments.csproj",
-      "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikel\\OneDrive - Dolbey Systems, Inc\\Desktop\\css-experiments\\obj\\",
+      "projectPath": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\css-experiments.csproj",
+      "packagesPath": "C:\\Users\\mlamb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mikel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mlamb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "\\\\jenkins\\nugetrepo": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
