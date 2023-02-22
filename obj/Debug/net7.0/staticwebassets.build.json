@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7I5PbTZMPD0/6Y16mBYkDXIwkizBhFihhrk6R2oBsRU=",
+  "Hash": "LY6+bJorlB8HIhHZ3++C11oCsk1fCA5mlT1sYBDHSt4=",
   "Source": "css-experiments",
   "BasePath": "_content/css-experiments",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "css-experiments\\wwwroot",
       "Source": "css-experiments",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\accordion.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\accordion.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "accordion.html",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\accordion.html"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\css\\site.css",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\hedge.jpg",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\hedge.jpg",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "hedge.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\hedge.jpg"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\index.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\logo.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\logo.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "logo.html",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\logo.html"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\plants.jpg",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\plants.jpg",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "plants.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\plants.jpg"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\tabs.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\tabs.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "tabs.html",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\tabs.html"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\top-nav.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\top-nav.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "top-nav.html",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\top-nav.html"
     },
     {
-      "Identity": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\tree.html",
+      "Identity": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\tree.html",
       "SourceId": "css-experiments",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlamb\\projects\\personal\\css-experiments\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikel\\projects\\personal\\css-experiments\\wwwroot\\",
       "BasePath": "_content/css-experiments",
       "RelativePath": "tree.html",
       "AssetKind": "All",
